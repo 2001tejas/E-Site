@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: rgba(177, 190, 190, 0.9);
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(220, 20, 60, 0.712);
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.headphone {
+    text-align: center;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 30px;
+    transition: all ease 2.5s;
+}
+
+.headphone:hover {
+    bottom: 10px;
+}
+
+.watch {
+    text-align: center;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 30px;
+    transition: all ease 2.5s;
+}
+
+.watch:hover {
+    bottom: 10px;
+}
+
+.earbud {
+    text-align: center;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 30px;
+    transition: all ease 2.5s;
+}
+
+.earbud:hover {
+    bottom: 10px;
+}
+
+
+h3 {
+    font-size: 5vmin;
+    text-align: center;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    color: #fff;
+}
+
+h4 {
+    font-size: 5vmin;
+    text-align: center;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 5vmin;
+    text-align: center;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    color: #fff;
+    position: relative;
+    top: 25%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+}
+
+.card::after {
+    content: "Add to Cart";
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 19%;
+    background: #00ac7c;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease 0.1s;
+    left: 0;
+    text-align: center;
+}
+
+.card:hover::after {
+    opacity: 1;
+    bottom: 0px;
+}
+
+.card .price {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    padding: 2%;
+}
+
+.card .text {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 15px;
+    left: 30%;
+    padding: 2%;
+}
+
+.image {
+    width: 100px;
+    height: auto;
+}
+
+.row {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    width: 88%;
+    position: relative;
+    left: 9%;
+    border-radius: 10px;
+}
+
+.col {
+    padding: 2px;
+    margin: 5px;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.text h1{
+    /* font-size: 6vw !important ; */
+    /* padding: 0.2em; */
+    font-weight:bolder;
+    /* letter-spacing: 6px; */
+}
+
+.col-md-3 .card{
+    margin: 1em;
+}
+
+@media only screen and (max-width: 384px) {
+
+    .text h1{
+    font-size: 6vw !important ; 
+     padding: 0.2em;
+    /* font-weight:bolder; */
+    letter-spacing: 6px;
+}
+
+.headphone img{
+    width: 100px;
+    height: auto;
+}
+.watch img{
+    width: 150px;
+    height: auto;
+}
+.earbud img{
+    width: 150px;
+    height: auto;
+}
+
+ .col-md-3 .card{
+    width: 60%;
+    margin: 1em;
+    position: relative;
+    left: 15%;
+}
+}
+@media only screen and (max-width: 517px) {
+
+    .text h1{
+    font-size: 6vw !important ; 
+     padding: 0.2em;
+    /* font-weight:bolder; */
+    letter-spacing: 6px;
+}
+
+.headphone img{
+    width: 100px;
+    height: auto;
+}
+.watch img{
+    width: 150px;
+    height: auto;
+}
+.earbud img{
+    width: 150px;
+    height: auto;
+}
+
+ .col-md-3 .card{
+    width: 60%;
+    margin: 1em;
+    position: relative;
+    left: 15%;
+}
+}
