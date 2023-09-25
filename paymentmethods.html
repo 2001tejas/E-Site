@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="paymentmethods.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="header">
+            <h1>Electronic store</h1>
+        </div>
+    </div>
+    <div class="container-md position-absolute top-50 start-50 translate-middle">
+        <h4>Payment</h4>
+
+        <div>
+            <input type="radio" name="paymentMethod" value="card" onclick="showContainer('cardContainer')"> Pay with
+            Card <br>
+            <input type="radio" name="paymentMethod" value="upi" onclick="showContainer('upiContainer')"> Pay with
+            UPI <br>
+            <input type="radio" name="paymentMethod" value="cod" onclick="showContainer('codContainer')"> Cash on
+            Delivery <br>
+        </div>
+
+        <div class="card hidden" id="cardContainer">
+            <h5>Card Details</h5>
+            <label for="holder'sname" class="form-label">Card Holder's Name</label>
+            <input type="text" class="form-control" placeholder="Card Holder's Name"> <br>
+            <label for="CardNumber" class="form-label">Card Number</label>
+            <input type="number" class="form-control" placeholder="Card Number"> <br>
+            <label for="Expirydate" class="form-label">Expiry Date</label>
+            <input type="date" class="form-control" placeholder="Expiry Date"><br>
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="password" class="form-control" placeholder="CVV:">
+        </div>
+        <div class="card hidden" id="upiContainer">
+            <h5>Online upi</h5>
+            <label for="upi" class="form-label">UPI number</label>
+            <input type="number" class="form-control" placeholder="UPI Number">
+        </div>
+        <div class="card hidden" id="codContainer">
+            <h5>Cash on Delivery</h5>
+            <div class="input-group mb-3">
+                <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="checkbox" value=""
+                        aria-label="Checkbox for following text input">
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox"
+                    value="Cash on Delivery">
+            </div>
+        </div>
+
+        <input type="button" class="form-control btn btn-success" value="Make Payment" id="btn">
+    </div>
+
+    <!-- footer -->
+
+<div class="container-fulid" >
+    <div class="footer" >
+        <h1 style="font-size: smaller; padding:1px">@Electronic store</h1>
+    </div>
+</div>
+
+    <!-- JavaScript to show/hide containers based on selected payment method -->
+    <script src="paymentmethods.js"></script>
+</body>
+
+</html>
