@@ -1,0 +1,36 @@
+.header{
+    text-align: center;
+    width: 100%;
+}
+.container-fluid{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.footer{
+position: fixed;
+bottom: 0px;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.4) ;
+text-align: center;
+}
+ .container-md{
+    width: 400px;
+    text-align: center;
+    height: auto;
+ }
+
+.card{
+    border: 2px solid black;
+    /* padding: 5%; */
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center  ;
+    height: max-content
+}
+
+img{
+   height: 200px;
+   /* background-color:  aqua; */
+
+}
