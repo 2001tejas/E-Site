@@ -1,0 +1,55 @@
+label {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: rgba(177, 190, 190, 0.9);
+    width: 350px;
+    border-radius: 10px;
+    height: auto;
+
+
+}
+
+.text {
+    color: white;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.title {
+    margin-top: 5px;
+}
+
+.button {
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+.header {
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card img {
+    margin-left: 134px;
+    width: 100px;
+    object-fit: fill ;
+    height: 100px;
+    background-position: top;
+    border-radius: 100%;
+}
